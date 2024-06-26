@@ -7903,14 +7903,14 @@ table .nowrap {
 .cptable .checklist img {
   width: 1em;
   vertical-align: middle;
-  margin-right: 0.5em;
-  margin-top: -0.2em;
+  margin: -0.2em 0.5em 0 0;
 }
 .cptable .sing {
   max-width: 50%;
 }
 .cptable .sing img {
   width: 100%;
+  margin: 0;
 }
 @media screen and (max-width: 991px) {
   .cptable .sing {

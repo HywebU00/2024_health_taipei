@@ -511,14 +511,14 @@ table {
     img {
       width: 1em;
       vertical-align: middle;
-      margin-right: 0.5em;
-      margin-top: -0.2em;
+      margin: -0.2em 0.5em 0 0;
     }
   }
   .sing {
     max-width: 50%;
     img {
       width: 100%;
+      margin: 0;
     }
     @include screen('tablet') {
       max-width: 80%;
