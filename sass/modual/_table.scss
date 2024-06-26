@@ -55,6 +55,12 @@ table {
     text-align: center;
     white-space: nowrap;
     padding: 0.8em 0.5em;
+    a {
+      color: #fff;
+      &:hover {
+        color: #eee;
+      }
+    }
   }
   &.table_hover {
     tr:hover {
@@ -64,6 +70,99 @@ table {
   &.table_sprite {
     tr:nth-child(even) {
       background: #f4f4f4;
+    }
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 0.2em;
+      text-align: center;
+      margin-right: 0.25em;
+      font-size: 1rem;
+      color: #fff !important;
+      &.green {
+        color: #fff;
+        margin: 0 0.1em 0em;
+        padding: 0.6em 0.5em;
+        min-width: 7.5em;
+        white-space: nowrap;
+        background: darken($color-green, 0);
+      }
+      &.red {
+        color: #fff;
+        margin: 0 0.2em 0.2em;
+        padding: 0.6em 0.5em;
+        min-width: 7.5em;
+        white-space: nowrap;
+        background: darken($color-red, 0);
+      }
+      &.blue {
+        color: #fff;
+        margin: 0 0.2em 0.2em;
+        padding: 0.6em 0.5em;
+        min-width: 7.5em;
+        white-space: nowrap;
+        background: darken($color-blue, 10);
+      }
+      &.orange {
+        color: #fff;
+        margin: 0 0.2em 0.2em;
+        padding: 0.6em 0.5em;
+        min-width: 7.5em;
+        white-space: nowrap;
+        background: lighten($color-orange, 5);
+      }
+      &.gray {
+        color: #fff;
+        margin: 0 0.2em 0.2em;
+        padding: 0.6em 0.5em;
+        min-width: 7.5em;
+        white-space: nowrap;
+        background: darken($color-gray, 35);
+      }
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+        &.green {
+          color: #fff;
+          margin: 0 0.1em 0em;
+          padding: 0.6em 0.5em;
+          min-width: 7.5em;
+          white-space: nowrap;
+          background: darken($color-green, 5);
+        }
+        &.red {
+          color: #fff;
+          margin: 0 0.2em 0.2em;
+          padding: 0.6em 0.5em;
+          min-width: 7.5em;
+          white-space: nowrap;
+          background: darken($color-red, 5);
+        }
+        &.blue {
+          color: #fff;
+          margin: 0 0.2em 0.2em;
+          padding: 0.6em 0.5em;
+          min-width: 7.5em;
+          white-space: nowrap;
+          background: darken($color-blue, 15);
+        }
+        &.orange {
+          color: #fff;
+          margin: 0 0.2em 0.2em;
+          padding: 0.6em 0.5em;
+          min-width: 7.5em;
+          white-space: nowrap;
+          background: lighten($color-orange, 5);
+        }
+        &.gray {
+          color: #fff;
+          margin: 0 0.2em 0.2em;
+          padding: 0.6em 0.5em;
+          min-width: 7.5em;
+          white-space: nowrap;
+          background: darken($color-gray, 45);
+        }
+      }
     }
   }
   .aCenter,
@@ -79,6 +178,9 @@ table {
     text-align: left;
   }
   .date {
+    white-space: nowrap;
+  }
+  .nowrap {
     white-space: nowrap;
   }
   @include screen('xs_mobile') {
@@ -151,17 +253,18 @@ table {
       border: none !important;
       border-bottom: 1px solid #eee !important;
       position: relative;
-      padding-left: 35% !important;
+      // padding-left: 35% !important;
       white-space: normal;
       text-align: left;
+      vertical-align: middle;
       &:before {
         content: attr(data-title);
-        position: absolute;
-        top: 0.8rem;
-        left: 0.5em;
-        width: 30%;
+        // position: absolute;
+        // top: 0.8rem;
+        // left: 0.5em;
+        // width: 30%;
         padding-right: 10px;
-        white-space: nowrap;
+        // white-space: nowrap;
         text-align: left;
         font-weight: bold;
         color: #000;
@@ -335,5 +438,93 @@ table {
   }
   to {
     right: 0.3em;
+  }
+}
+//cptable
+.cptable {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em 0;
+  .f_title {
+    font-size: 1.35em;
+    font-weight: bold;
+    background: $primaryColor;
+    color: #fff;
+    position: relative;
+    padding: 0.5em 0.8em 0.5em 3.5em;
+    letter-spacing: 2px;
+    line-height: 1em;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .time {
+      font-size: 1rem;
+      float: right;
+      font-weight: normal;
+      letter-spacing: 0;
+      @include screen('mobile') {
+        float: none;
+        display: block;
+        padding: 5px 0 0;
+      }
+    }
+    .step {
+      background: #fff;
+      color: $primaryColor;
+      padding: 0.35em 0.5em;
+      font-size: 1rem;
+      border-radius: 30px;
+      margin-right: 0.5em;
+      font-weight: bold;
+      letter-spacing: 0;
+      position: absolute;
+      left: 0.5em;
+      top: 0.5em;
+      line-height: 1em;
+    }
+  }
+
+  table {
+    border-top: solid 1px #dadfe9;
+    th {
+      width: 20%;
+      border-bottom: solid 1px #dadfe9;
+      background: #f7f8fa;
+      padding: 0.5em;
+      color: #111;
+      text-align: right;
+      font-weight: normal;
+      @include screen('mobile') {
+        white-space: normal;
+        min-width: 8em;
+      }
+    }
+    td {
+      border-bottom: solid 1px #dadfe9;
+      padding: 0.5em;
+    }
+  }
+  .checklist {
+    margin: 0 1em;
+    font-size: 0.938em;
+    img {
+      width: 1em;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      margin-top: -0.2em;
+    }
+  }
+  .sing {
+    max-width: 50%;
+    img {
+      width: 100%;
+    }
+    @include screen('tablet') {
+      max-width: 80%;
+    }
+    @include screen('mobile') {
+      max-width: 100%;
+    }
   }
 }

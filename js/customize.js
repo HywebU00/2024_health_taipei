@@ -263,15 +263,15 @@ $(function () {
     }
   });
   // header perinfo
-  $('.perinfo_block .perinfo_btn').click(function () {
-    if ($('.perinfo_content').is(':visible')) {
-      $('.perinfo_content').stop().slideUp();
-    } else {
-      $('.perinfo_content').stop().slideDown();
-      $('.font_size_list').stop().slideUp();
-      $('.searchcontent').stop().slideUp();
-    }
-  });
+  // $('.perinfo_block .perinfo_btn').click(function () {
+  //   if ($('.perinfo_content').is(':visible')) {
+  //     $('.perinfo_content').stop().slideUp();
+  //   } else {
+  //     $('.perinfo_content').stop().slideDown();
+  //     $('.font_size_list').stop().slideUp();
+  //     $('.searchcontent').stop().slideUp();
+  //   }
+  // });
 
   //內頁左欄上下開合
   var _leftnodemenu = $('.left_block .leftblock_nodemenu ul');

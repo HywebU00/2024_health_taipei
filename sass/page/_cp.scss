@@ -495,8 +495,27 @@
     table {
       th,
       td {
-        display: block;
+        // display: block;
       }
+    }
+  }
+  .peoplename {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 1rem 1rem;
+    letter-spacing: 3px;
+  }
+  .regnum {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 1rem 1rem;
+    letter-spacing: 3px;
+    em {
+      font-style: normal;
+      color: $color-red;
+      margin: 0 0.5rem;
     }
   }
 }

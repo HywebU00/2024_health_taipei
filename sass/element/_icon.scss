@@ -71,6 +71,9 @@
 .i_dot {
   @include hyui_icon('icon_dot');
 }
+.i_doctor {
+  @include hyui_icon('icon_doctor');
+}
 
 // ---------------- E ----------------
 .i_edit {
@@ -108,6 +111,9 @@
 .i_info {
   @include hyui_icon('icon_info');
 }
+.i_inject {
+  @include hyui_icon('icon_inject');
+}
 
 // ---------------- J ----------------
 // ---------------- K ----------------
@@ -132,6 +138,9 @@
 }
 .i_man {
   @include hyui_icon('icon_man');
+}
+.i_manadd {
+  @include hyui_icon('icon_manadd');
 }
 .i_minus {
   @include hyui_icon('icon_minus');

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>臺北市社區疫苗接種系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="vendor/fancybox/fancybox.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header Start -->
+      <header class="header">
+        <div class="container">
+          <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+          <h1>
+            <a href="index.htm"><img src="images/logo.png" alt="臺北市社區疫苗接種系統" /></a>
+          </h1>
+
+          <!-- navigation Start -->
+          <nav class="navigation" role="navigation" aria-label="個人資訊">
+            <!-- Search Start -->
+            <div class="searchblock">
+              <button type="button" class="searchbtn">個人資訊</button>
+              <div class="searchcontent">
+                <div class="search">
+                  <ul>
+                    <li>
+                      <button class="btn"><i class="i_man"></i>個人資訊</button>
+                    </li>
+                    <li>
+                      <button class="btn"><i class="i_edit"></i>修改密碼</button>
+                    </li>
+                    <li>
+                      <button class="btn"><i class="i_edit"></i>更新簽名檔</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-logout"><i class="i_logout"></i>登出系統</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search End -->
+          </nav>
+          <!-- navigation End -->
+          <!-- menu Start -->
+          <nav class="menu" role="navigation" aria-label="Header的導航列">
+            <ul>
+              <li>
+                <a href="#">所有場次</a>
+                <ul>
+                  <li><a href="#">第二層選單</a></li>
+                  <li>
+                    <a href="#">第二層選單</a>
+                    <ul>
+                      <li><a href="#">第三層選單</a></li>
+                      <li><a href="#">第三層選單</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">第二層選單</a></li>
+                  <li><a href="#">第二層選單</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">今日場次</a>
+              </li>
+              <li>
+                <a href="#">釘選場次報名列表</a>
+              </li>
+              <li>
+                <a href="#">釘選場次接種列表</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- menu End -->
+          <!-- noscript -->
+          <noscript>
+            您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+            <a href="#">網站導覽</a>
+          </noscript>
+        </div>
+      </header>
+      <!-- header End -->
+      <!-- main Start -->
+      <div id="center" class="main innerpage">
+        <!-- 內頁新增一個classname-->
+        <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+
+        <div class="container">
+          <!-- 左側 -->
+          <div class="left_block hidden"></div>
+          <!-- 主要內容區 -->
+          <div class="center_block">
+            <h2 class="title">接種列表</h2>
+            <!-- function_panel -->
+            <div class="function_panel">
+              <!-- function功能區塊 start-->
+              <div class="function">
+                <ul>
+                  <li class="back2"><a href="javascript:history.back()">回上一頁</a></li>
+                </ul>
+              </div>
+              <!-- function功能區塊 end-->
+            </div>
+            <!-- function_panel -->
+            <div class="numBlock">
+              <ul>
+                <li>醫師評估目前叫號 / <em>12</em></li>
+                <li>護理師接種目前叫號 / <em>11</em></li>
+                <li>等待人數 / <em>2</em></li>
+              </ul>
+            </div>
+            <!-- int3 star -->
+            <div class="int3">
+              <div class="items1">
+                <h3>1131001萬壽里設站上午場</h3>
+                <ul>
+                  <li>萬華區萬壽里｜肺鏈,流感｜臺北市立聯合醫院昆明院區 （萬華區）</li>
+                  <li>設站日期：1131001 09:00 ~ 12:00</li>
+                  <li>名額：11/200</li>
+                </ul>
+              </div>
+              <div class="items2">
+                <buttom class="btn btn-blue btn-manadd"><i class="i_doctor invert"></i>醫師評估</buttom>
+                <buttom class="btn btn-blue btn-manadd"><i class="i_inject invert"></i>護理師接種</buttom>
+              </div>
+            </div>
+            <!-- int3 end -->
+            <!-- stat-8-4 -->
+            <div class="stat-8-4">
+              <div class="col">
+                <div class="content_block">
+                  <div class="_head">
+                    <h3>總接種人數<span class="num">50</span></h3>
+                  </div>
+                  <div class="_content">
+                    <div class="stat-2-10">
+                      <div class="col">
+                        <!-- sbox -->
+                        <div class="sbox">
+                          <div class="stitle">未報到</div>
+                          <div class="num">20</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <!-- sbox -->
+                        <div class="sbox">
+                          <ul>
+                            <li class="items">
+                              <div class="stitle">已報到</div>
+                              <div class="num">30</div>
+                            </li>
+                            <li class="items">
+                              <div class="stitle">完成報到</div>
+                              <div class="num">10</div>
+                            </li>
+                            <li class="items">
+                              <div class="stitle">評估可接種</div>
+                              <div class="num">10</div>
+                            </li>
+                            <li class="items">
+                              <div class="stitle">不可接種</div>
+                              <div class="num">3</div>
+                            </li>
+                            <li class="items">
+                              <div class="stitle">完成接種</div>
+                              <div class="num">7</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="content_block">
+                  <div class="_head">
+                    <h3 style="margin: 0.3em 0.5em 0">疫苗類型接種人數</h3>
+                  </div>
+                  <div class="_content">
+                    <!-- sbox2 -->
+                    <div class="sbox2">
+                      <ul>
+                        <li class="items">
+                          <div class="stitle">北PPV</div>
+                          <div class="num">2</div>
+                        </li>
+                        <li class="items">
+                          <div class="stitle">央PPV</div>
+                          <div class="num">4</div>
+                        </li>
+                        <li class="items">
+                          <div class="stitle">PCV13</div>
+                          <div class="num">1</div>
+                        </li>
+                        <li class="items">
+                          <div class="stitle">流感</div>
+                          <div class="num">6</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagesearch star -->
+            <div class="pagesearch">
+              <form action="">
+                <div class="items1">
+                  <div class="form_grp form_inline">
+                    <label for="username">關鍵字：</label>
+                    <input name="username" type="text" placeholder="請輸入姓名、生日、證號" />
+                  </div>
+                </div>
+                <div class="items2">
+                  <div class="form_grp form_inline">
+                    <label for="username">報名序號：</label>
+                    <input name="username" type="text" placeholder="請輸入報名序號" />
+                    <button class="btn btn-blue">查詢</button>
+                  </div>
+                </div>
+                <div class="items6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" />顯示已完成資料</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- pagesearch end -->
+
+            <!-- LP Start -->
+            <section class="lp">
+              <!-- 文字列表 -->
+              <div class="table_wrapper">
+                <table class="table_sprite">
+                  <thead>
+                    <tr>
+                      <th>報名序號</th>
+                      <th>姓名</th>
+                      <th>生日</th>
+                      <th>身分證統一編號/<br />統一證號</th>
+                      <th>戶籍</th>
+                      <th>可接種資格</th>
+                      <th>民眾報到</th>
+                      <th>醫師評估</th>
+                      <th>護理師接種</th>
+                      <th>
+                        接種<br />
+                        同意書
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="num">11</td>
+                      <td class="text-center nowrap">呂O瑋</td>
+                      <td class="text-center">0411112</td>
+                      <td class="text-center">P1****6225</td>
+                      <td class="text-center">非北市</td>
+                      <td class="text-center">央PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="gray">尚未接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">12</td>
+                      <td class="text-center">王O明</td>
+                      <td class="text-center">0470110</td>
+                      <td class="text-center">A1****6789</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">央PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="gray">尚未評估</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="gray">尚未接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">1</td>
+                      <td class="text-center">韓O伶</td>
+                      <td class="text-center">0500110</td>
+                      <td class="text-center">A1****7731</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">北PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">2</td>
+                      <td class="text-center">陸O鵬</td>
+                      <td class="text-center">0401012</td>
+                      <td class="text-center">K2****9383</td>
+                      <td class="text-center">非北市</td>
+                      <td class="text-center">央PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="red">不可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="gray">尚未接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">3</td>
+                      <td class="text-center">許O建</td>
+                      <td class="text-center">0420201</td>
+                      <td class="text-center">A1****8582</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">央PPV</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">4</td>
+                      <td class="text-center">楊O棋</td>
+                      <td class="text-center">0531211</td>
+                      <td class="text-center">M1****8602</td>
+                      <td class="text-center">原</td>
+                      <td class="text-center">央PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">5</td>
+                      <td class="text-center">吳O翔</td>
+                      <td class="text-center">0410320</td>
+                      <td class="text-center">A1****8526</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">央PPV</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">6</td>
+                      <td class="text-center">魯O宜</td>
+                      <td class="text-center">0440120</td>
+                      <td class="text-center">N2****4083</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">北PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">7</td>
+                      <td class="text-center">陽O婷</td>
+                      <td class="text-center">0411120</td>
+                      <td class="text-center">L1****2516</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">北PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">8</td>
+                      <td class="text-center">羅O寬</td>
+                      <td class="text-center">0470110</td>
+                      <td class="text-center">A1****6789</td>
+                      <td class="text-center">北市</td>
+                      <td class="text-center">北PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">9</td>
+                      <td class="text-center">張O嘉</td>
+                      <td class="text-center">0430520</td>
+                      <td class="text-center">V1****8323</td>
+                      <td class="text-center">非北市</td>
+                      <td class="text-center">央PPV,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="num">10</td>
+                      <td class="text-center">劉O凱</td>
+                      <td class="text-center">0420320</td>
+                      <td class="text-center">L1****1711</td>
+                      <td class="text-center">非北市</td>
+                      <td class="text-center">PCV13,流感</td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成報到</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">可接種</a>
+                      </td>
+                      <td class="text-center">
+                        <a href="#" class="green">完成接種</a>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-green btn_show" onclick="location.href='cp_table.htm'">
+                          <i class="i_show invert"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 文字列表 end -->
+              <!-- Pagination -->
+              <div class="pagination">
+                <form action="">
+                  <div class="form_inline">
+                    <div class="total">
+                      共<span>99</span>筆資料，第<span>1/18</span>頁，每頁顯示
+                      <select name="" id="" aria-label="每頁顯示">
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">40</option>
+                      </select>
+                      筆， <input type="button" value="確定" class="btn btn-submit" />
+                    </div>
+                  </div>
+                </form>
+                <ul class="page">
+                  <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
+                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
+                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                </ul>
+              </div>
+              <!-- Pagination end-->
+            </section>
+            <!-- LP End -->
+          </div>
+        </div>
+      </div>
+
+      <!-- footer Start-->
+      <footer>
+        <div class="container">
+          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+          <div class="footer_info">
+            <div class="infoblock">
+              <p class="Copyright">版權所有 臺北市政府衛生局　 地址：110204 臺北市信義區市府路1號</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script>
+    <!-- slick -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script>
+    <!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+    <!-- scrolltable -->
+    <!-- fancybox -->
+    <script src="vendor/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+        //
+      });
+    </script>
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>

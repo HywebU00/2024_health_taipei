@@ -8,7 +8,7 @@ html {
 
 body {
   background: #fff url(../images/body_bg.jpg) no-repeat center top;
-  background-size: 100% auto;
+  background-size: cover;
   position: relative;
   &.noscroll {
     position: static !important;

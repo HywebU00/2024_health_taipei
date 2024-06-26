@@ -1,5 +1,5 @@
 // 按鈕設定
-$btn-font-color: $btn-word;
+$btn-font-color: #fff;
 $btn-border: darken($btn-font-color, 5);
 $btn-padding: 0.5em 1.25em;
 $btn-radius: 0.2em;
@@ -10,10 +10,11 @@ $btn-radius: 0.2em;
 }
 
 // 按鈕的共用設定
-@mixin btn_setting($btn-bg: #e0e0e0, $btn-font-color: $btn-font-color) {
-  background: $btn-bg;
+@mixin btn_setting($btn-bg: #666, $btn-font-color: $btn-font-color) {
+  background: lighten($btn-bg, 5);
   border: 1px solid $btn-bg;
   color: $btn-font-color;
+  font-weight: bold;
   // text-shadow:1px 1px 1px RGBA(0,0,0,.3);
   // border-radius: $btn-radius;
   // @include gradient(lighten($btn-bg, 5), darken($btn-bg, 15), vertical);
@@ -35,8 +36,14 @@ $btn-radius: 0.2em;
     // @include gradient(lighten($btn-bg, 10), darken($btn-bg, 18), vertical);
   }
   &.active {
-    background: lighten($btn-bg, 5);
+    background: lighten($color-green, 0);
+    color: #fff;
     cursor: pointer;
+    &:hover,
+    &:focus {
+      background: darken($color-green, 5);
+      color: #fff;
+    }
   }
 }
 // 按鈕預設陰影
@@ -100,11 +107,11 @@ $btn-radius: 0.2em;
 }
 .btn-submit {
   // @extend %btn;
-  @include btn_setting(lighten($primaryColor, 5), #fff);
+  @include btn_setting(lighten($primaryColor, 0), #fff);
 }
 .btn-reset {
   // @extend %btn;
-  color: lighten($color-word, 15);
+  // color: lighten($color-word, 15);
 }
 .btn-search {
   // @extend %btn;

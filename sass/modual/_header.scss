@@ -242,6 +242,7 @@
   position: relative;
   z-index: 100;
   margin-right: 1em;
+  right: 0;
   @include screen('mobile') {
     display: none;
   }
@@ -301,6 +302,7 @@
       i {
         &:before {
           margin-top: -3px;
+          filter: invert(1);
         }
       }
     }

@@ -3,9 +3,13 @@
 :focus:not(:focus-visible) {
   outline: none;
 }
-
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
 :focus-visible {
-  outline: 2px dashed $aFocus;
+  outline: 2px dashed $aFocus !important;
 }
 
 // 導盲磚

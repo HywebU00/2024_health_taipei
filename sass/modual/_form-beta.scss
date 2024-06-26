@@ -229,6 +229,47 @@ select::-ms-expand {
 }
 
 .form_grid {
+  .form_grp {
+    border-bottom: solid 1px #eee;
+    padding: 1em;
+    flex: 1 1 100%;
+  }
+  .form_title {
+    margin: 0.3em 0;
+  }
+  .form_content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .items1 {
+      flex: 1 1 auto;
+      background: #f7f8fa;
+      padding: 0.5em;
+      .form_title {
+        display: block;
+      }
+      .btn {
+        width: 24%;
+        min-width: 10em;
+        @include screen('mobile') {
+          width: 100%;
+        }
+      }
+    }
+    .items2 {
+      flex: 0 0 10em;
+      align-self: center;
+      text-align: right;
+
+      @include screen('mobile') {
+        flex: 1 1 100%;
+        text-align: center;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .flex-form {
