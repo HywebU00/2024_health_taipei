@@ -598,24 +598,45 @@
     top: 0.4em;
   }
 }
+.fancybox__content > .f-button.is-close-btn {
+  --f-button-border-radius: 5px;
+  --f-button-color: #333;
+  --f-button-hover-color: #333;
+  --f-button-outline-color: #000;
+  --f-button-bg: rgba(255, 255, 255, 1);
+  --f-button-active-bg: rgba(255, 255, 255, 1);
+  --f-button-hover-bg: rgba(255, 255, 255, 1);
+  --f-button-svg-width: 36px;
+  --f-button-svg-height: 36px;
+  --f-button-svg-filter: none;
+  position: absolute;
+  // top: -38px;
+  // right: 0;
+  opacity: 1;
+  top: 2em;
+  right: 2em;
+  @include screen('mobile') {
+  }
+}
 .popupBox {
   background: #fff;
-  padding: 1em;
+  padding: 1em 2em;
   border-radius: 10px;
   .title {
-    background: $primaryColor;
-    border: none;
-    margin: 0;
-    padding: 0.5em;
-    color: #fff;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    &::before {
-      display: none;
-    }
+    padding-bottom: 0.5em;
+    // background: $primaryColor;
+    // border: none;
+    // margin: 0;
+    // padding: 0.5em;
+    // color: #fff;
+    // font-size: 1.5em;
+    // text-align: center;
+    // margin: 0;
+    // letter-spacing: 2px;
+    // border-radius: 5px;
+    // &::before {
+    //   display: none;
+    // }
   }
   .cptable {
     // border-radius: 10px;
@@ -643,8 +664,11 @@
   }
 }
 .enterBox {
-  margin: 2em;
+  margin: 1em 0;
+  padding: 1em 2em;
   font-size: 1.125em;
+  background: #f7f8fa;
+  border-radius: 10px;
   .form_grp {
     // border-bottom: solid 1px #dadfe9;
     padding: 0.5em;
@@ -652,13 +676,13 @@
 }
 
 .checkBox {
-  padding: 2em 2em 1em;
+  padding: 1em 2em 1em;
   @include screen('mobile') {
     padding: 2em 0.5em 1em;
   }
 }
 .messageBox {
-  padding: 1em 1.5em 1em;
+  padding: 1em 1.5em;
   p {
     font-size: 1.25em;
     line-height: 1.6em;

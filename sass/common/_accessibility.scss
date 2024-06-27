@@ -9,7 +9,8 @@
   border: none !important;
 }
 :focus-visible {
-  outline: 2px dashed $aFocus !important;
+  outline: 0px dashed $aFocus !important;
+  box-shadow: 0 0 0 2px inset $aFocus !important;
 }
 
 // 導盲磚

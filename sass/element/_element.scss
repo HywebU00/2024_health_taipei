@@ -1,10 +1,10 @@
 // scrollTop
 .scrollToTop {
-  width: 86px;
-  height: 86px;
-  border-radius: 2px;
-  background: #cecece url(../images/top.png) no-repeat center top 20px;
-  background-size: 34px auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: url(../images/top.png) no-repeat center center rgba(0, 0, 0, 0.4);
+  background-size: 28px auto;
   text-align: center;
   color: #1b1b1b;
   line-height: 120px;
@@ -17,11 +17,12 @@
   z-index: 99999999;
   // text-indent: -999999px;
   font-family: 'Jost', sans-serif;
+  font-size: 0;
   &:hover,
   &:focus {
     color: #fff;
-    background: url(../images/top2.png) no-repeat center top 15px rgba(0, 0, 0, 0.6);
-    background-size: 34px auto;
+    background: url(../images/top.png) no-repeat center center rgba(0, 0, 0, 0.6);
+    background-size: 28px auto;
     box-shadow: none;
   }
 }

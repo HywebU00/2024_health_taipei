@@ -1352,7 +1352,8 @@ th {
 }
 
 :focus-visible {
-  outline: 2px dashed #0172f2 !important;
+  outline: 0px dashed #0172f2 !important;
+  box-shadow: 0 0 0 2px inset #0172f2 !important;
 }
 
 .accesskey {
@@ -3184,7 +3185,6 @@ em[tooltip]:hover, em[tooltip]:focus {
   font-size: 1.125rem;
   font-weight: bolder;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: 0.5s;
   position: relative;
 }
 .category a:hover, .category a:focus {
@@ -3268,11 +3268,11 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 
 .scrollToTop {
-  width: 86px;
-  height: 86px;
-  border-radius: 2px;
-  background: #cecece url(../images/top.png) no-repeat center top 20px;
-  background-size: 34px auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: url(../images/top.png) no-repeat center center rgba(0, 0, 0, 0.4);
+  background-size: 28px auto;
   text-align: center;
   color: #1b1b1b;
   line-height: 120px;
@@ -3284,11 +3284,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   display: none;
   z-index: 99999999;
   font-family: "Jost", sans-serif;
+  font-size: 0;
 }
 .scrollToTop:hover, .scrollToTop:focus {
   color: #fff;
-  background: url(../images/top2.png) no-repeat center top 15px rgba(0, 0, 0, 0.6);
-  background-size: 34px auto;
+  background: url(../images/top.png) no-repeat center center rgba(0, 0, 0, 0.6);
+  background-size: 28px auto;
   box-shadow: none;
 }
 
@@ -4658,7 +4659,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .megamenu ul li ul li a {
   padding: 0.6em 1.2em;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   box-sizing: border-box;
 }
@@ -4763,7 +4764,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  color: #FFF;
+  color: #fff;
   width: 100%;
   height: 3em;
   background: #333a93;
@@ -4775,13 +4776,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   width: 100%;
   box-shadow: 0px 0px 4px RGBA(0, 0, 0, 0.4);
   margin-bottom: 1em;
-  background: #CCC;
+  background: #ccc;
 }
 .sidebar .m_area .megamenu a {
   display: block;
   color: #222;
   text-decoration: none;
-  transition: 0.4s ease-out;
   text-align: left;
 }
 .sidebar .m_area .megamenu ul {
@@ -4795,13 +4795,13 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   padding: 0.5em 1em;
   min-height: 2em;
   line-height: 2em;
-  background: #FFF;
-  border-bottom: 1px solid #CCC;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
 }
 .sidebar .m_area .megamenu ul li.hasChild > a {
   padding: 0.5em 1em;
   color: #222;
-  background: #FFF;
+  background: #fff;
   padding-right: 36px;
   position: relative;
 }
@@ -4817,7 +4817,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   transform: rotate(45deg);
   border-top: none;
   border-left: none;
-  transition: 0.3s;
 }
 .sidebar .m_area .megamenu ul li ul {
   display: none;
@@ -4844,7 +4843,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .sidebar .m_area .megamenu ul li ul li li a {
   background: rgba(0, 0, 0, 0.15) !important;
   padding: 0.5em 1em 0.5em 4em !important;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid #bbb;
 }
 .sidebar .m_area .megamenu ul li ul li li a:hover, .sidebar .m_area .megamenu ul li ul li li a:focus {
   background: rgba(0, 0, 0, 0.25) !important;
@@ -4883,7 +4882,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   line-height: 2em;
   padding: 0.5em 1em;
   font-size: 0.938em;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -5406,7 +5405,6 @@ select::-ms-expand {
   bottom: 0;
   height: 100%;
   padding: 0.6em 0.5em 0.1em;
-  transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .labelEffect > label:before, .labelEffect > label:after {
   content: "";
@@ -5417,7 +5415,6 @@ select::-ms-expand {
   bottom: -2px;
   height: 2px;
   background: #0066cc;
-  transition: 0.2s ease all;
 }
 .labelEffect input,
 .labelEffect textarea,
@@ -7084,7 +7081,6 @@ button {
   margin: 0.3em;
   box-sizing: border-box;
   border-radius: 0.2em;
-  transition: all 0.3s ease-out;
 }
 
 input,
@@ -7162,7 +7158,6 @@ textarea {
   margin: 0.3em;
   box-sizing: border-box;
   border-radius: 0.2em;
-  transition: all 0.3s ease-out;
   height: 5em;
   overflow-y: scroll;
 }
@@ -8089,7 +8084,6 @@ table .nowrap {
   color: #fff;
   border-radius: 1em;
   border: none;
-  transition: 0.2s;
   background-color: #333;
   cursor: pointer;
   z-index: 9;
@@ -8109,12 +8103,9 @@ table .nowrap {
   border-left: none;
   border-top: none;
   transform: rotate(225deg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   position: absolute;
   left: 12px;
   top: 0.85em;
-  transition: 0.3s;
 }
 .expansile.partial .readAll::before {
   transform: rotate(45deg);
@@ -11908,25 +11899,29 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   top: 0.4em;
 }
 
+.fancybox__content > .f-button.is-close-btn {
+  --f-button-border-radius: 5px;
+  --f-button-color: #333;
+  --f-button-hover-color: #333;
+  --f-button-outline-color: #000;
+  --f-button-bg: rgba(255, 255, 255, 1);
+  --f-button-active-bg: rgba(255, 255, 255, 1);
+  --f-button-hover-bg: rgba(255, 255, 255, 1);
+  --f-button-svg-width: 36px;
+  --f-button-svg-height: 36px;
+  --f-button-svg-filter: none;
+  position: absolute;
+  opacity: 1;
+  top: 2em;
+  right: 2em;
+}
 .popupBox {
   background: #fff;
-  padding: 1em;
+  padding: 1em 2em;
   border-radius: 10px;
 }
 .popupBox .title {
-  background: #333a93;
-  border: none;
-  margin: 0;
-  padding: 0.5em;
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0;
-  letter-spacing: 2px;
-  border-radius: 5px;
-}
-.popupBox .title::before {
-  display: none;
+  padding-bottom: 0.5em;
 }
 .popupBox .cptable {
   border-top-left-radius: 0;
@@ -11949,15 +11944,18 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 
 .enterBox {
-  margin: 2em;
+  margin: 1em 0;
+  padding: 1em 2em;
   font-size: 1.125em;
+  background: #f7f8fa;
+  border-radius: 10px;
 }
 .enterBox .form_grp {
   padding: 0.5em;
 }
 
 .checkBox {
-  padding: 2em 2em 1em;
+  padding: 1em 2em 1em;
 }
 @media screen and (max-width: 767px) {
   .checkBox {
@@ -11966,7 +11964,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 
 .messageBox {
-  padding: 1em 1.5em 1em;
+  padding: 1em 1.5em;
 }
 .messageBox p {
   font-size: 1.25em;
