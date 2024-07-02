@@ -237,6 +237,14 @@ select::-ms-expand {
   .form_title {
     margin: 0.3em 0;
   }
+  .form_title2 {
+    margin: 0.3em 1em;
+  }
+  .form_inline {
+    .form_title {
+      min-width: 5em;
+    }
+  }
   .form_content {
     display: flex;
     flex-wrap: wrap;

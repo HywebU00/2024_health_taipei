@@ -132,7 +132,7 @@
   font-size: 0em;
   line-height: 0em;
   position: absolute;
-  top: 40%;
+  top: 35%;
   display: block;
   width: 40px !important;
   height: 60px !important;
@@ -291,10 +291,12 @@
 // slick._scss
 // adSlider
 .adSlider {
-  @include gutter(70px);
-  margin-bottom: 20px;
+  @include gutter(60px);
+
+  // @include gutter(70px);
+  // margin-bottom: 20px;
   @include screen('mobile') {
-    @include gutter();
+    @include gutter(40px);
   }
   .slick-prev {
     background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
@@ -307,9 +309,13 @@
     right: -15px;
   }
   .img-container {
-    width: 165px;
-    height: 55px;
-    margin: 0px 15px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     a {
       display: block;
       text-align: center;
@@ -328,9 +334,12 @@
         left: 0;
         bottom: 0;
         right: 0;
-        box-shadow: 0 0px 0px 3px $primaryColor inset;
+        // box-shadow: 0 0px 0px 3px $primaryColor inset;
       }
     }
+  }
+  .slick-initialized .slick-slide {
+    display: grid !important;
   }
 }
 

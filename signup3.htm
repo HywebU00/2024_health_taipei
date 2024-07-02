@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>臺北市社區疫苗接種系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="vendor/fancybox/fancybox.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header Start -->
+      <header class="header">
+        <div class="container">
+          <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+          <h1>
+            <a href="index.htm"><img src="images/logo.png" alt="臺北市社區疫苗接種系統" /></a>
+          </h1>
+
+          <!-- navigation Start -->
+          <nav class="navigation" role="navigation" aria-label="個人資訊">
+            <!-- Search Start -->
+            <div class="searchblock">
+              <button type="button" class="searchbtn">個人資訊</button>
+              <div class="searchcontent">
+                <div class="search">
+                  <ul>
+                    <li>
+                      <button class="btn"><i class="i_man"></i>個人資訊</button>
+                    </li>
+                    <li>
+                      <button class="btn"><i class="i_edit"></i>修改密碼</button>
+                    </li>
+                    <li>
+                      <button class="btn"><i class="i_edit"></i>更新簽名檔</button>
+                    </li>
+                    <li>
+                      <button class="btn btn-logout"><i class="i_logout"></i>登出系統</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search End -->
+          </nav>
+          <!-- navigation End -->
+          <!-- menu Start -->
+          <nav class="menu" role="navigation" aria-label="Header的導航列">
+            <ul>
+              <li>
+                <a href="#">所有場次</a>
+                <ul>
+                  <li><a href="#">第二層選單</a></li>
+                  <li>
+                    <a href="#">第二層選單</a>
+                    <ul>
+                      <li><a href="#">第三層選單</a></li>
+                      <li><a href="#">第三層選單</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">第二層選單</a></li>
+                  <li><a href="#">第二層選單</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">今日場次</a>
+              </li>
+              <li>
+                <a href="#">釘選場次報名列表</a>
+              </li>
+              <li>
+                <a href="#">釘選場次接種列表</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- menu End -->
+          <!-- noscript -->
+          <noscript>
+            您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+            <a href="#">網站導覽</a>
+          </noscript>
+        </div>
+      </header>
+      <!-- header End -->
+      <!-- main Start -->
+      <div id="center" class="main innerpage">
+        <!-- 內頁新增一個classname-->
+        <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+
+        <div class="container">
+          <!-- 左側 -->
+          <div class="left_block hidden"></div>
+          <!-- 主要內容區 -->
+          <div class="center_block">
+            <h2 class="title">醫師評估</h2>
+            <!-- function_panel -->
+            <div class="function_panel">
+              <!-- function功能區塊 start-->
+              <div class="function">
+                <ul>
+                  <li class="back2"><a href="javascript:history.back()">回上一頁</a></li>
+                </ul>
+              </div>
+              <!-- function功能區塊 end-->
+            </div>
+            <!-- function_panel -->
+
+            <!-- formBox star -->
+            <div class="formBox">
+              <form action="">
+                <div class="btn_grp">
+                  <button class="btn btn-submit btn-card" data-fancybox="" data-type="iframe" data-src="i_check.htm">讀取卡片</button>
+                  <button class="btn btn-submit btn-hand" data-fancybox="" data-type="iframe" data-src="i_enter.htm">手動輸入</button>
+                </div>
+              </form>
+            </div>
+            <!-- formBox end -->
+            <!-- pagesearch star -->
+            <div class="pagesearch">
+              <form action="">
+                <div class="items2">
+                  <div class="form_grp form_inline">
+                    <label for="username">身分證統一編號/統一證號：</label>
+                    <input name="username" type="text" placeholder="請輸入證號" />
+                  </div>
+                </div>
+                <div class="items2">
+                  <div class="form_grp form_inline">
+                    <label for="username">報名序號：</label>
+                    <input name="username" type="text" placeholder="請輸入報名序號" />
+                    <button class="btn btn-blue">查詢</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- pagesearch end -->
+            <!-- adSlider star -->
+
+            <div class="adSlider">
+              <div>
+                <!-- int5 star -->
+                <div class="int5">
+                  <div class="items1">
+                    <div class="peopleBox2">
+                      <div class="n_title">王大明<span class="num">12號</span></div>
+                      <ul>
+                        <li>A123456789(北市)｜0470110 (66歲)｜0912345678</li>
+                        <li>接種意願：肺鏈,流感</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items3">
+                    <ul class="flow">
+                      <li class="active">完成報到</li>
+                      <li>尚未評估</li>
+                      <li>尚未接種</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- int5 end -->
+              </div>
+              <div>
+                <!-- int5 star -->
+                <div class="int5">
+                  <div class="items1">
+                    <div class="peopleBox2">
+                      <div class="n_title">蘇小小<span class="num">15號</span></div>
+                      <ul>
+                        <li>A123456789(北市)｜0470110 (66歲)｜0912345678</li>
+                        <li>接種意願：肺鏈,流感</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items3">
+                    <ul class="flow">
+                      <li class="active">完成報到</li>
+                      <li class="active">完成評估</li>
+                      <li>尚未接種</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- int5 end -->
+              </div>
+              <div>
+                <!-- int5 star -->
+                <div class="int5">
+                  <div class="items1">
+                    <div class="peopleBox2">
+                      <div class="n_title">王大明<span class="num">12號</span></div>
+                      <ul>
+                        <li>A123456789(北市)｜0470110 (66歲)｜0912345678</li>
+                        <li>接種意願：肺鏈,流感</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="items3">
+                    <ul class="flow">
+                      <li class="active">完成報到</li>
+                      <li class="active">完成評估</li>
+                      <li class="active">完成接種</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- int5 end -->
+              </div>
+            </div>
+            <!-- adSlider end -->
+            <!-- detail_ct -->
+            <div class="detail_ct">
+              <div class="s_title">請確認接種者的健康狀況是否可接種</div>
+              <!-- condition -->
+              <div class="condition">
+                <!-- form -->
+                <form action="" class="form_grid">
+                  <!-- subBlock -->
+                  <div class="subBlock">
+                    <div class="form_grp">
+                      <div class="warning"><img src="images/basic/icon_warning.svg" alt="" />可接種資格僅供參考，請依照實際情況由醫師判斷是否符合資格</div>
+                      <div class="form_inline">
+                        <label for="username" class="form_title">可接種資格：</label>
+                        <div class="form_content">央PPV,流感</div>
+                      </div>
+
+                      <label for="username" class="form_title">接種紀錄：</label>
+                      <div class="form_content">
+                        <div class="table_wrapper">
+                          <table>
+                            <tr>
+                              <th>接種日期</th>
+                              <th>疫苗劑次</th>
+                            </tr>
+                            <tr>
+                              <td>1111001</td>
+                              <td>13PCV-1</td>
+                            </tr>
+                            <tr>
+                              <td>1111001</td>
+                              <td>FLU-1</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- subBlock end-->
+                  <div class="form_grp form_inline">
+                    <label for="username" class="form_title">評估醫師：</label>
+                    <div class="form_content">陳明白</div>
+                  </div>
+                  <div class="form_grp">
+                    <!-- subBlock2 -->
+                    <div class="subBlock2">
+                      <div class="form_inline">
+                        <label for="selectSample" class="form_title">身分別：</label>
+                        <div class="form_content">&nbsp;</div>
+                      </div>
+                      <label for="selectSample" class="form_title">肺鏈：</label>
+                      <div class="form_content">
+                        <select name="" id="selectSample">
+                          <option value="">請選擇</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                          <option value="">選項四</option>
+                        </select>
+                      </div>
+                      <label for="selectSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>流感：</label>
+                      <div class="form_content">
+                        <select name="" id="selectSample">
+                          <option value="">F03B　滿 50 歲以上成人社區/企業接種站/到宅接種</option>
+                          <option value="">選項二</option>
+                          <option value="">選項三</option>
+                          <option value="">選項四</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- subBlock2 end-->
+                  </div>
+
+                  <div class="form_grp">
+                    <label for="username" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>經過評估後請選擇可接種的疫苗類型：</label>
+                    <div class="form_content">
+                      <div class="check_grp form_inline">
+                        <label class="checkbox"><input type="checkbox" name="" value="" />央PPV</label>
+                        <label class="checkbox"><input type="checkbox" name="" value="" checked="" />流感</label>
+                        <label class="checkbox nobtn"><input type="checkbox" name="" value="" />不可接種</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="textareaSample1" class="form_title">備註說明：</label>
+                    <div class="form_content">
+                      <textarea id="textareaSample1" rows="3">請填寫說明（限100字以內）</textarea>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="username" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>醫師簽名：</label>
+                    <div class="form_content">
+                      <div class="sign">
+                        <img src="images/sign2.png" alt="簽名" />
+                      </div>
+                      <!-- <button type="button" class="btn btn-blue signbtn" data-fancybox="" data-type="iframe" data-src="i_sign.htm">簽名</button> -->
+                    </div>
+                  </div>
+
+                  <div class="btn_grp">
+                    <button class="btn btn-reset">返回列表</button>
+                    <button class="btn btn-reset">退回重新選擇接種意願</button>
+                    <button class="btn btn-reset">重置</button>
+                    <button class="btn btn-submit" data-fancybox="" data-type="iframe" data-src="i_finish.htm">完成評估</button>
+                    <button class="btn btn-submit" data-fancybox="" data-type="iframe" data-src="i_finish.htm">完成評估，接續下一號</button>
+                  </div>
+                </form>
+                <!-- form end -->
+              </div>
+              <!-- condition end-->
+            </div>
+            <!-- detail_ct end-->
+          </div>
+        </div>
+      </div>
+
+      <!-- footer Start-->
+      <footer>
+        <div class="container">
+          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+          <div class="footer_info">
+            <div class="infoblock">
+              <p class="Copyright">版權所有 臺北市政府衛生局　 地址：110204 臺北市信義區市府路1號</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script>
+    <!-- slick -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script>
+    <!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+    <!-- scrolltable -->
+    <!-- fancybox -->
+    <script src="vendor/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+        //
+      });
+    </script>
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>

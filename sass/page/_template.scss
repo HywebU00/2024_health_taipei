@@ -21,10 +21,10 @@ body {
   }
   &:before {
     content: '';
-    width: 818px;
+    width: 70%;
     height: 242px;
     background: url(../images/body_bg2.png) no-repeat left;
-    background-size: 100% auto;
+    background-size: auto 100%;
     position: absolute;
     top: 0;
     left: 30%;

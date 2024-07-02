@@ -71,9 +71,9 @@ $(function () {
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrow: true,
     lazyLoaded: true,
     lazyLoad: 'ondemand',
@@ -82,7 +82,7 @@ $(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
         },
@@ -90,7 +90,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
         },
@@ -98,7 +98,7 @@ $(function () {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
         },
