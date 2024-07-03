@@ -101,7 +101,7 @@ select::-ms-expand {
       position: absolute;
       bottom: -2px;
       height: 2px;
-      background: lighten($form-focus, 0);
+      // background: lighten($form-focus, 0);
       // transition: 0.2s ease all;
     }
   }
@@ -114,11 +114,11 @@ select::-ms-expand {
     &.used {
       & ~ label {
         bottom: 0;
-        font-size: 0.813em;
+        font-size: 0.875em;
         color: darken($primaryColor, 10);
         padding: 0;
         pointer-events: none;
-        height: calc(100% + 1.95em);
+        height: calc(100% + 1.6em);
         &:before {
           width: 50%;
           left: 0%;

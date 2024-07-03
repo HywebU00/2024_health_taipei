@@ -826,3 +826,28 @@ $(function () {
     window.getComputedStyle(pageSearchBox).display === 'none' ? (pageSearchBox.style.display = 'block') : (pageSearchBox.style.display = 'none');
   });
 })();
+//form style
+$(function () {
+  $('.labelEffect').each(function (index, el) {
+    $(this)
+      .find('select')
+      .blur(function () {
+        var $this = $(this);
+        $(this).find('option').first().attr('disabled', 'true');
+        if ($(this).find(':selected').val() != '') {
+          $this.addClass('used');
+        } else {
+          $this.removeClass('used');
+          $(this).find(':selected').text('');
+        }
+      });
+    $(this)
+      .find('select')
+      .focus(function () {
+        var item = $(this).find('option').first();
+        $(item).text('請選擇');
+        $(item).removeAttr('disabled');
+        $(this).removeClass('used');
+      });
+  });
+});

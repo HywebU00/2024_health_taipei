@@ -1,0 +1,304 @@
+.login_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ededed;
+  .bg_img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    // &:before {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: darken($primaryColor, 15);
+    //     opacity: .4;
+    //     content: "";
+    // }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+  h1 {
+    width: 100%;
+    max-width: 1162px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 999;
+    .pic {
+      // flex: 1 1 100%;
+      // height: 60px;
+      // display: flex;
+      position: absolute;
+      z-index: 99;
+      left: 50px;
+      top: 20px;
+      img {
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+      @include screen('mobile') {
+        top: 20px;
+        left: 30px;
+      }
+      @include screen('xs_mobile') {
+        top: 25px;
+        width: 100%;
+        left: 5%;
+      }
+    }
+  }
+}
+.login {
+  position: relative;
+  z-index: 99;
+  background: url(../images/loginbg2.png) no-repeat center top;
+  background-size: auto 100%;
+  // backdrop-filter: blur(5px);
+  // border-radius: $border-radius;
+  max-width: 1162px;
+  width: 90%;
+  margin: 90px auto 3%;
+  left: auto;
+  min-height: 594px;
+  padding: 2em 2em 3em;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+  @include screen('mobile') {
+    width: 100%;
+    margin: 70px auto 3%;
+  }
+  &:before {
+    content: '';
+    width: 240px;
+    height: 140px;
+    background: url(../images/addimg.png) no-repeat center center;
+    background-size: 90% auto;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    @include screen('mobile') {
+      background: url(../images/addimg.png) no-repeat center center;
+      background-size: 70% auto;
+    }
+    @include screen('xs_mobile') {
+      display: none;
+    }
+  }
+  h3 {
+    margin: 0.5em;
+    text-align: left;
+    font-size: 1.25em;
+    color: #333;
+    border-left: solid 5px #c00;
+    flex: 1 1 100%;
+    padding-left: 0.5em;
+  }
+  .flex-form {
+    width: 335px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    @include screen('mobile') {
+      width: 90%;
+      right: 5%;
+      left: 4%;
+      top: 80px;
+    }
+  }
+  .abbr {
+    border-bottom: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #cc0000 !important;
+    margin: 0 0.2em;
+  }
+  .form_grp {
+    border: none;
+    padding: 0.5em 0;
+    position: relative;
+    display: flex;
+    label {
+      flex: 0 0 4em;
+    }
+    input[type='text'] {
+      background: #fff;
+      padding: 0.5em 0.3em;
+      flex: 1 1 calc(100% - 5em);
+      &:focus {
+        background: #eee;
+        border: solid 1px #ccc;
+      }
+    }
+    input[type='password'] {
+      background: #fff;
+      width: calc(100% - 5em);
+      &:focus {
+        background: #eee;
+      }
+    }
+    .codeinput[type='text'] {
+      flex: 0 1 7em;
+    }
+    .btn_circle {
+      flex: 0 0 2em;
+      min-width: auto;
+      padding: 0;
+      background: rgba(255, 255, 255, 0);
+      border: none;
+    }
+  }
+  .forget_Block {
+    border: solid 1px #c00;
+    label {
+      flex: 0 0 6em;
+      font-size: 0;
+    }
+    input[type='text'] {
+      background: #fff;
+      padding: 0.5em 0.3em;
+      flex: 1 1 calc(100% - 0);
+      &:focus {
+        background: #eee;
+      }
+    }
+  }
+  .form_content {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+  }
+  .btn_grp {
+    width: 100%;
+    margin: 0 0 0.5em;
+    @include screen('mobile') {
+      width: 100%;
+      margin-left: 0;
+    }
+    .btn {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      // border-radius: 2em;
+      font-size: 1rem;
+      background: $primaryColor;
+      border: solid 1px $primaryColor;
+      color: #fff;
+      padding: 0.5em 0.2em;
+      &:hover,
+      &:focus {
+        background: darken($primaryColor, 10%);
+        color: #fff;
+      }
+    }
+    .btn-primary {
+      background: $primaryColor;
+      &:hover,
+      &:focus {
+        background: darken($primaryColor, 10%);
+      }
+    }
+  }
+  .contact {
+    color: #333;
+    line-height: 1.4;
+    margin-left: 1.5%;
+    width: 100%;
+    .forget {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 0.938rem;
+    }
+    a {
+      text-decoration: underline;
+      display: inline-block;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  label {
+    abbr {
+      color: #cc0000;
+    }
+  }
+
+  .btn-icon {
+    flex: 0 1 3em;
+    background: none;
+    flex: 0 1 10%;
+    min-width: 0em;
+    margin: 0em 0 0 0.5em;
+    padding: 0.2em 0.25em;
+    font-size: 0.938em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.35em;
+    border: none;
+  }
+  [class^='i_']:before {
+    height: 2em;
+    width: 2em;
+  }
+  .i_reload {
+    margin-left: 0.2em !important;
+    &::before {
+      margin-top: 0em;
+    }
+  }
+  .int_box {
+    margin: 0 0 1em 1.5%;
+    flex: 1 1 100%;
+  }
+  .viewbtn {
+    width: 1.6em !important;
+    height: 1.6em;
+    background: rgba(255, 255, 255, 0) url(../images/icon/icon_hide.svg) no-repeat center center;
+    background-size: 1.2em;
+    border: none;
+    position: absolute;
+    top: 0.9em;
+    right: 0.8em;
+    &:focus,
+    &:checked {
+      background: rgba(255, 255, 255, 0) url(../images/icon/icon_show.svg) no-repeat center center;
+      background-size: 1.2em;
+      box-shadow: none;
+    }
+  }
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

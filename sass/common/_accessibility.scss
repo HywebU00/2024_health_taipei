@@ -4,13 +4,13 @@
   outline: none;
 }
 :focus {
-  outline: none !important;
+  // outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
 :focus-visible {
-  outline: 0px dashed $aFocus !important;
-  box-shadow: 0 0 0 2px inset $aFocus !important;
+  outline: 2px dashed $aFocus !important;
+  // box-shadow: 0 0 0 2px inset $aFocus !important;
 }
 
 // 導盲磚
