@@ -66,6 +66,9 @@ table {
     tr:hover {
       background: #f4f4f4;
     }
+    tr:nth-child(even) {
+      background: #e6e8ee;
+    }
   }
   &.table_sprite {
     tr:nth-child(even) {
@@ -349,7 +352,7 @@ table {
 }
 
 .scroltable {
-  min-width: 600px !important;
+  // min-width: 600px !important;
 }
 
 .scroltable-wrapper {

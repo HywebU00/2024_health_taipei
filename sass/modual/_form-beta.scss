@@ -67,10 +67,14 @@ select::-ms-expand {
   }
   &.password_toggle,
   &.hasBtn {
+    select {
+      margin: 0 !important;
+      flex: 1 1 70%;
+    }
     input[type='text'],
     input[type='password'] {
       padding-right: 3em;
-      // letter-spacing: .1em;
+      letter-spacing: 0.1em;
     }
   }
   display: flex;
@@ -108,8 +112,9 @@ select::-ms-expand {
   input,
   textarea,
   select {
-    flex: 1 1 70%;
+    // flex: 1 1 70% !important;
     border-radius: 0.2em;
+    // background: #f4f4f4;
     &:focus,
     &.used {
       & ~ label {
@@ -445,18 +450,19 @@ select::-ms-expand {
     // 第一層的 form_title
     .form_title {
       // padding: 18px 0;
-      color: darken($primaryColor, 10);
-      font-weight: 500;
+      // color: darken($primaryColor, 10);
+      // font-weight: 500;
     }
   }
+
   .form_title {
     max-width: $form_title_width;
     flex: 0 0 $form_title_width;
     align-self: flex-start;
     // padding: .65em 1em;
     padding: 0.65em 0;
-    font-weight: 500;
-    color: darken($primaryColor, 10);
+    // font-weight: 500;
+    // color: darken($primaryColor, 10);
     //white-space: nowrap;
     @include screen('mobile') {
       max-width: calc(100% - 0.6em);
@@ -1287,7 +1293,7 @@ select::-ms-expand {
   input[type='button'],
   input[type='search'],
   .input-i {
-    width: auto;
+    // width: auto;
     flex: 0 0 auto;
   }
   .form_grp,
@@ -1297,7 +1303,7 @@ select::-ms-expand {
   .upload_grp {
     display: flex;
     margin-right: 0.5em;
-    width: auto;
+    // width: auto;
     flex: 0 0 auto;
     // @include screen('mobile'){
     //     width: 100%;
@@ -1664,6 +1670,11 @@ img.captcha {
 }
 
 //---------------------------------------------必填欄位說明--------//
+abbr {
+  color: $color-red;
+  font-weight: bold;
+  margin-right: 2px;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: none;
@@ -1709,4 +1720,11 @@ abbr[title] {
     opacity: 0;
     transform: scale(3.5);
   }
+}
+select[readonly],
+select[disabled] {
+  background: url(../images/basic/icon_select_arrow.svg) no-repeat right center #ddffbe;
+  background-size: 20px;
+  color: #333;
+  cursor: not-allowed;
 }

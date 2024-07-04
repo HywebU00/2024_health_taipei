@@ -5391,10 +5391,15 @@ select::-ms-expand {
     margin-left: 0;
   }
 }
+.labelEffect.password_toggle select, .labelEffect.hasBtn select {
+  margin: 0 !important;
+  flex: 1 1 70%;
+}
 .labelEffect.password_toggle input[type=text],
 .labelEffect.password_toggle input[type=password], .labelEffect.hasBtn input[type=text],
 .labelEffect.hasBtn input[type=password] {
   padding-right: 3em;
+  letter-spacing: 0.1em;
 }
 .labelEffect > label {
   width: 100%;
@@ -5421,7 +5426,6 @@ select::-ms-expand {
 .labelEffect input,
 .labelEffect textarea,
 .labelEffect select {
-  flex: 1 1 70%;
   border-radius: 0.2em;
 }
 .labelEffect input:focus ~ label, .labelEffect input.used ~ label,
@@ -5740,17 +5744,11 @@ select::-ms-expand {
 .flex-form .form_grp .datepick > input[type=text] {
   padding-right: 2em;
 }
-.flex-form .form_grp .form_title {
-  color: #262b6d;
-  font-weight: 500;
-}
 .flex-form .form_title {
   max-width: 150px;
   flex: 0 0 150px;
   align-self: flex-start;
   padding: 0.65em 0;
-  font-weight: 500;
-  color: #262b6d;
 }
 @media screen and (max-width: 767px) {
   .flex-form .form_title {
@@ -7004,7 +7002,6 @@ select::-ms-expand {
 .form_inline input[type=button],
 .form_inline input[type=search],
 .form_inline .input-i {
-  width: auto;
   flex: 0 0 auto;
 }
 .form_inline .form_grp,
@@ -7014,7 +7011,6 @@ select::-ms-expand {
 .form_inline .upload_grp {
   display: flex;
   margin-right: 0.5em;
-  width: auto;
   flex: 0 0 auto;
 }
 .form_inline .btn_grp {
@@ -7366,6 +7362,12 @@ img.captcha ~ img {
   margin-bottom: 0.5em;
 }
 
+abbr {
+  color: #c00;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: none;
@@ -7408,6 +7410,14 @@ abbr[title] {
     transform: scale(3.5);
   }
 }
+select[readonly],
+select[disabled] {
+  background: url(../images/basic/icon_select_arrow.svg) no-repeat right center #ddffbe;
+  background-size: 20px;
+  color: #333;
+  cursor: not-allowed;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -7463,6 +7473,9 @@ table th a:hover {
 }
 table.table_hover tr:hover {
   background: #f4f4f4;
+}
+table.table_hover tr:nth-child(even) {
+  background: #e6e8ee;
 }
 table.table_sprite tr:nth-child(even) {
   background: #f4f4f4;
@@ -7731,10 +7744,6 @@ table .nowrap {
   .table_wrapper table {
     width: 100%;
   }
-}
-
-.scroltable {
-  min-width: 600px !important;
 }
 
 .scroltable-wrapper {
@@ -11029,7 +11038,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   position: absolute;
   z-index: 99;
   left: 50px;
-  top: 30px;
+  top: 20px;
 }
 .login_wrapper h1 .pic img {
   max-width: 500px;
@@ -11167,11 +11176,11 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .login .forget_Block input[type=text] {
   background: #fff;
   padding: 0.5em 0.3em;
-  flex: 1 1 calc(100% - 7em);
+  flex: 1 1 100%;
+  margin: 0;
 }
 .login .forget_Block input[type=text]:focus {
   background: #eee;
-  border: solid 1px #ccc;
 }
 .login .form_content {
   border: none;
@@ -12745,10 +12754,6 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .formbox .table_wrapper {
   width: 100%;
 }
-.formbox .i_close:before {
-  margin-top: -0.2em;
-  margin-left: -0.22em;
-}
 .formbox .tbbtn {
   flex: 1 1 100%;
 }
@@ -12879,6 +12884,59 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
     z-index: 1;
   }
   .flow .active:after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #333a93;
+    position: absolute;
+    top: 3.1em;
+    left: 50%;
+    z-index: 0;
+  }
+}
+.flow .noact {
+  color: #333a93;
+}
+.flow .noact:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #333a93 url(../images/icon_flow3.png) no-repeat center center;
+  background-size: 22px auto;
+  border: solid 5px #333a93;
+  position: absolute;
+  border-radius: 50%;
+  top: 2em;
+  left: 50%;
+  margin-left: -18px;
+  z-index: 1;
+}
+.flow .noact:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #333a93;
+  position: absolute;
+  top: 3.1em;
+  left: 50%;
+  z-index: 0;
+}
+@media screen and (max-width: 767px) {
+  .flow .noact:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: #333a93 url(../images/icon_flow3.png) no-repeat center center;
+    background-size: 20px auto;
+    border: solid 4px #333a93;
+    position: absolute;
+    border-radius: 50%;
+    top: 2em;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 1;
+  }
+  .flow .noact:after {
     content: "";
     width: 100%;
     height: 5px;
@@ -13023,6 +13081,75 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .btnBlock .btn.undone:hover, .btnBlock .btn.undone:focus {
   background: #595959;
   color: #fff;
+}
+
+.formbox {
+  margin: 2em 2em 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  font-size: 1.125em;
+}
+.formbox div .radio_grp a {
+  margin-left: 1em;
+}
+.formbox table {
+  margin-bottom: 1em;
+  background: #fff;
+}
+.formbox table th {
+  white-space: normal;
+}
+.formbox table td {
+  padding: 0.3em 0.5em;
+}
+.formbox table .close_btn {
+  border-radius: 50%;
+  border: none;
+  width: 2.2em;
+  height: 2.2em;
+}
+.formbox table .i_close {
+  filter: invert(100%) !important;
+}
+.formbox table .disabled,
+.formbox table [disabled] {
+  background: #aaa;
+}
+.formbox .form_grp {
+  border-bottom: solid 1px #dadfe9;
+  margin-bottom: 0;
+  padding: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  .formbox {
+    margin: 1em 2%;
+    padding: 1em 0.5em;
+    width: 96% !important;
+  }
+}
+.formbox .table_wrapper {
+  width: 100%;
+}
+.formbox .i_close:before {
+  margin-top: -0.1em;
+  margin-left: 0em;
+}
+.formbox .tbbtn {
+  flex: 1 1 100%;
+}
+.formbox .tbbtn .btn {
+  padding: 0.4em 2em 0.4em 1.5em !important;
+  margin: 0.3em;
+}
+.formbox .btn-search {
+  border-radius: 50%;
+  flex: 0 0 3em;
+  height: 3em;
+}
+.formbox .btn-search i {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 @media print {

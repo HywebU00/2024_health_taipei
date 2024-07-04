@@ -167,7 +167,6 @@
     }
   }
   .forget_Block {
-    border: solid 1px #c00;
     label {
       flex: 0 0 6em;
       font-size: 0;
@@ -175,7 +174,8 @@
     input[type='text'] {
       background: #fff;
       padding: 0.5em 0.3em;
-      flex: 1 1 calc(100% - 0);
+      flex: 1 1 calc(100% - 0%);
+      margin: 0;
       &:focus {
         background: #eee;
       }
