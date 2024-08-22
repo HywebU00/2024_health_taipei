@@ -9703,6 +9703,7 @@ div.function ul li.icon_forward a:before {
 }
 .pagination .total select {
   margin: 0px 0.5em;
+  width: auto;
 }
 @media screen and (max-width: 767px) {
   .pagination .total select {
