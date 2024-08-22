@@ -271,6 +271,8 @@ select::-ms-expand {
     }
     .items2 {
       flex: 1 1 100%;
+      text-align: right;
+      margin-top: 0.5rem;
       @include screen('mobile') {
         flex: 1 1 100%;
         text-align: center;

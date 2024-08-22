@@ -5582,6 +5582,8 @@ select::-ms-expand {
 }
 .form_grid .form_content .items2 {
   flex: 1 1 100%;
+  text-align: right;
+  margin-top: 0.5rem;
 }
 @media screen and (max-width: 767px) {
   .form_grid .form_content .items2 {
