@@ -131,11 +131,14 @@
     color: #cc0000 !important;
     margin: 0 0.2em;
   }
-  .form_grp {
+  .form_grp,
+  .password_toggle {
     border: none;
-    padding: 0.5em 0;
+    padding: 0.3em 0;
     position: relative;
     display: flex;
+    align-items: center;
+    width: 100%;
     label {
       flex: 0 0 4em;
     }
@@ -257,13 +260,13 @@
     padding: 0.2em 0.25em;
     font-size: 0.938em;
     position: absolute;
-    right: 0.5em;
-    top: 0.35em;
+    right: 0.8em;
+    top: 1.2em;
     border: none;
   }
   [class^='i_']:before {
-    height: 2em;
-    width: 2em;
+    height: 1.2em;
+    width: 1.2em;
   }
   .i_reload {
     margin-left: 0.2em !important;

@@ -35,8 +35,11 @@
             <input name="" type="text" value="請輸入帳號" />
           </div>
           <div class="form_grp">
-            <label>密　碼</label>
-            <input type="password" value="12345" id="pwInput" />
+            <div class="password_toggle">
+              <label>密　碼</label>
+              <input name="" type="password" value="" />
+              <button class="btn btn-icon"><i class="i_hide"></i></button>
+            </div>
             <!-- <input type="checkbox" onclick="pwFunction()" class="viewbtn" /> -->
           </div>
           <div></div>
@@ -57,20 +60,11 @@
       </div>
     </div>
     <!-- JS-->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="vendor/jquery.easing.min.js"></script>
     <!-- template customize js -->
     <script src="js/customize.js"></script>
-    <script>
-      function pwFunction() {
-        var x = document.getElementById('pwInput');
-        if (x.type === 'password') {
-          x.type = 'text';
-        } else {
-          x.type = 'password';
-        }
-      }
-    </script>
+
     <!-- highlight -->
     <script src="vendor/highlight/highlight.pack.js"></script>
     <!-- tree view -->

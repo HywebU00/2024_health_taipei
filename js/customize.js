@@ -220,28 +220,6 @@ $(function () {
     infinite: true,
   });
 
-  // password_toggle
-  var passShow = false;
-  $('.password_toggle').each(function (index, el) {
-    $(this)
-      .find('.btn-icon')
-      .off()
-      .click(function (e) {
-        if (!passShow) {
-          $(this).children('i').removeClass().addClass('i_show');
-          $(this).parents('.password_toggle').find('input[type="password"]').attr('type', 'text');
-          passShow = true;
-          // console.log(passShow);
-        } else {
-          $(this).children('i').removeClass().addClass('i_hide');
-          $(this).parents('.password_toggle').find('input[type="text"]').attr('type', 'password');
-          passShow = false;
-          // console.log(passShow);
-        }
-        e.preventDefault();
-      });
-  });
-
   // font_size
   $('.fontsize_btn').click(function () {
     if ($('.font_size_list').is(':visible')) {
@@ -848,6 +826,30 @@ $(function () {
         $(item).text('請選擇');
         $(item).removeAttr('disabled');
         $(this).removeClass('used');
+      });
+  });
+});
+
+$(function () {
+  // password_toggle
+  var passShow = false;
+  $('.password_toggle').each(function (index, el) {
+    $(this)
+      .find('.btn-icon')
+      .off()
+      .click(function (e) {
+        if (!passShow) {
+          $(this).children('i').removeClass().addClass('i_show');
+          $(this).parents('.password_toggle').find('input[type="password"]').attr('type', 'text');
+          passShow = true;
+          // console.log(passShow);
+        } else {
+          $(this).children('i').removeClass().addClass('i_hide');
+          $(this).parents('.password_toggle').find('input[type="text"]').attr('type', 'password');
+          passShow = false;
+          // console.log(passShow);
+        }
+        e.preventDefault();
       });
   });
 });
