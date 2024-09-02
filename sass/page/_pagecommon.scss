@@ -687,7 +687,7 @@
 }
 .enterBox {
   margin: 1em 0;
-  padding: 1em 2em;
+  padding: 2em 2em 1em;
   font-size: 1.125em;
   background: #f7f8fa;
   border-radius: 10px;
@@ -860,6 +860,7 @@
   .signbtn {
     margin: 1em;
     min-width: 6em;
+    height: 3em;
   }
   .disabled {
     pointer-events: none;
