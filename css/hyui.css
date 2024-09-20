@@ -5745,10 +5745,12 @@ select::-ms-expand {
   padding-right: 2em;
 }
 .flex-form .form_title {
-  max-width: 150px;
-  flex: 0 0 150px;
+  max-width: 14em;
+  flex: 0 0 14em;
+  text-align: right;
   align-self: flex-start;
   padding: 0.65em 0;
+  white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
   .flex-form .form_title {
@@ -5763,8 +5765,8 @@ select::-ms-expand {
   }
 }
 .flex-form .form_title + .form_content[class*=form_col] {
-  flex-basis: calc(100% - 150px);
-  max-width: calc(100% - 150px);
+  flex-basis: calc(100% - 14em);
+  max-width: calc(100% - 14em);
   padding-top: 0;
 }
 @media screen and (max-width: 767px) {
@@ -5775,9 +5777,9 @@ select::-ms-expand {
 }
 .flex-form .form_content {
   display: flex;
-  max-width: calc(100% - 150px);
+  max-width: calc(100% - 14em);
   flex: auto;
-  flex-basis: calc(100% - 150px);
+  flex-basis: calc(100% - 14em);
   position: relative;
   min-height: 1px;
   flex-wrap: wrap;
