@@ -12524,7 +12524,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .stat-8-4 .col {
   flex-grow: 2;
   flex-shrink: 2;
-  flex-basis: 66.6666%;
+  flex-basis: 56.6666%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12534,7 +12534,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .stat-8-4 .col:nth-child(2n) {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 33.3333%;
+  flex-basis: 43.3333%;
 }
 @media screen and (max-width: 991px) {
   .stat-8-4 .col {
@@ -12603,7 +12603,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   border-radius: 1em;
   text-align: center;
   padding: 0.5em;
-  margin: 0.5em;
+  margin: 0.5em 0.2em;
 }
 .sbox ul {
   display: flex;
@@ -12640,11 +12640,11 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   margin-top: -1em;
 }
 .sbox .stitle {
-  font-size: 1.125em;
+  font-size: 1em;
   margin: 0.3em 0;
 }
 .sbox .num {
-  font-size: 2.2em;
+  font-size: 1.2em;
   padding: 0.3em;
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
@@ -12686,11 +12686,11 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   margin-top: -1em;
 }
 .sbox2 .stitle {
-  font-size: 1.125em;
+  font-size: 1em;
   margin: 0.3em 0;
 }
 .sbox2 .num {
-  font-size: 2.2em;
+  font-size: 1.2em;
   padding: 0.3em;
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
