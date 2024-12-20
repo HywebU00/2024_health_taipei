@@ -12042,10 +12042,10 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   }
 }
 .int3 .items1 {
-  flex: 1 1 50%;
+  flex: 1 1 70%;
 }
 .int3 .items2 {
-  flex: 0 0 50%;
+  flex: 0 0 30%;
   align-content: center;
   text-align: right;
 }
