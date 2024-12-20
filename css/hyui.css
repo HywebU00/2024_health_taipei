@@ -12042,7 +12042,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   }
 }
 .int3 .items1 {
-  flex: 1 1 auto;
+  flex: 1 1 50%;
 }
 .int3 .items2 {
   flex: 0 0 50%;
@@ -12052,7 +12052,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .int3 .items2 .btn {
   width: 9em;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .int3 .items2 {
     flex: 1 1 100%;
     text-align: center;

@@ -426,7 +426,7 @@
     padding: 1em;
   }
   .items1 {
-    flex: 1 1 auto;
+    flex: 1 1 50%;
   }
   .items2 {
     flex: 0 0 50%;
@@ -435,7 +435,7 @@
     .btn {
       width: 9em;
     }
-    @include screen('tablet') {
+    @include screen('mobile') {
       flex: 1 1 100%;
       text-align: center;
     }
